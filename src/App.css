@@ -1,6 +1,48 @@
 .App {
   text-align: center;
 }
+.App-head {
+  background-color: blue;
+  height: 4rem;
+
+}
+/* ハンバーガーメニュー */
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 37px;
+  padding: 0rem 2rem;
+  text-align: right;
+  box-shadow: 0px 5px 0px 5px rgba(0, 0, 0, 1.5);
+}
+
+/* サイドメニュー */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 20px 0;
+  cursor: pointer;
+}
 
 .App-logo {
   height: 40vmin;
